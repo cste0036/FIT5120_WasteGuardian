@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/FIT5120_WasteGuardian.props" />
+</Project>
