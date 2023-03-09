@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj": {}
+    "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj": {}
   },
   "projects": {
-    "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj": {
+    "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj",
+        "projectUniqueName": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj",
         "projectName": "FIT5120_WasteGuardian",
-        "projectPath": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj",
-        "packagesPath": "C:\\Users\\callu\\.nuget\\packages\\",
-        "outputPath": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\obj\\",
+        "projectPath": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj",
+        "packagesPath": "/Users/callum/.nuget/packages/",
+        "outputPath": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\callu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/callum/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

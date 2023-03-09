@@ -7,16 +7,16 @@ var gameEnded = false;
 
 // Define the rubbish objects to be used in the game
 var rubbish = [
-    { color: "green", x: 50, y: 50, width: 50, height: 50, url: "js/assets/bananaPeel.png" },
-    { color: "red", x: 100, y: 100, width: 50, height: 50, url: "js/assets/brokenCup.png" },
-    { color: "yellow", x: 150, y: 50, width: 50, height: 50, url: "js/assets/can.png" },
-    { color: "green", x: 200, y: 100, width: 50, height: 50, url: "js/assets/cardboardBox.png" },
-    { color: "red", x: 250, y: 50, width: 50, height: 50, url: "js/assets/dirtyPizzaBox.png" },
-    { color: "red", x: 300, y: 100, width: 50, height: 50, url: "js/assets/garbageBag.png" },
-    { color: "yellow", x: 350, y: 50, width: 50, height: 50, url: "js/assets/paper.png" },
-    { color: "yellow", x: 400, y: 100, width: 50, height: 50, url: "js/assets/plasticBottle.png" },
-    { color: "yellow", x: 450, y: 50, width: 50, height: 50, url: "js/assets/plasticJug.png" },
-    { color: "red", x: 500, y: 100, width: 50, height: 50, url: "js/assets/sprayCan.png" },
+    { color: "green", x: 40, y: 50, width: 50, height: 50, url: "js/assets/bananaPeel.png" },
+    { color: "red", x: 120, y: 100, width: 50, height: 50, url: "js/assets/brokenCup.png" },
+    { color: "yellow", x: 200, y: 50, width: 50, height: 50, url: "js/assets/can.png" },
+    { color: "yellow", x: 280, y: 100, width: 50, height: 50, url: "js/assets/cardboardBox.png" },
+    { color: "red", x: 360, y: 50, width: 50, height: 50, url: "js/assets/dirtyPizzaBox.png" },
+    { color: "red", x: 440, y: 100, width: 50, height: 50, url: "js/assets/garbageBag.png" },
+    { color: "yellow", x: 520, y: 50, width: 50, height: 50, url: "js/assets/paper.png" },
+    { color: "yellow", x: 600, y: 100, width: 50, height: 50, url: "js/assets/plasticBottle.png" },
+    { color: "yellow", x: 680, y: 50, width: 50, height: 50, url: "js/assets/plasticJug.png" },
+    { color: "red", x: 760, y: 100, width: 50, height: 50, url: "js/assets/sprayCan.png" },
 ];
 
 var bins = [
