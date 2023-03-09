@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using FIT5120_WasteGuardian.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FIT5120_WasteGuardian.Controllers;
 
@@ -12,10 +13,10 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
+    [Authorize] // Display website only to authorized users
     public IActionResult Index()
     {
-        return View();
+            return View();
     }
 
     public IActionResult Privacy()

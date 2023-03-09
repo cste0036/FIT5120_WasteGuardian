@@ -66,7 +66,8 @@ namespace FIT5120_WasteGuardian.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [EmailAddress]
-            public string Email { get; set; }
+            public string Email { get; set; } = "user@user.com"; // Assign a default value for the user email
+                // public string Email { get; set; }
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
