@@ -3,38 +3,10 @@
 }
 
 <head>
-    <style>
-        canvas {
-            border: 1px solid rgb(255, 255, 255);
-        }
-    </style>
-    
 </head>
 
 
 <div class="text-center">
     <h1 class="display-4">Welcome Waste Guardians!</h1>
-    <p>What do you know about sorting trash?</p>
 </div>
 
-<!-- Renders the Canvas game and imports the game Script File-->
-<div style="text-align:center;">
-    <audio id="pickup-sound" src="js/assets/pickup.mp3"></audio>
-    <audio id="bin-sound" src="js/assets/drop.mp3"></audio>
-    <canvas id="canvas" width="800" height="400"></canvas>
-</div>
-
-<!-- Designate an area to show the scores of the player -->
-<div class="row justify-content-center">
-    <div class="col-4 text-center">
-        <span id="bin1-score"></span>
-    </div>
-    <div class="col-4 text-center">
-        <span id="bin2-score"></span>
-    </div>
-    <div class="col-4 text-center">
-        <span id="bin3-score"></span>
-    </div>
-</div>
-
-    <script src='js/game.js'></script>

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace FIT5120_WasteGuardian.Controllers;
 
+[Authorize] // Display website only to authorized users
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -13,10 +14,15 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-    [Authorize] // Display website only to authorized users
+    
     public IActionResult Index()
     {
             return View();
+    }
+
+    public IActionResult Game()
+    {
+        return View();
     }
 
     public IActionResult Privacy()
