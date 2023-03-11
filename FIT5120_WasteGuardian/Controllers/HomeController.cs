@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using FIT5120_WasteGuardian.Models;
 using Microsoft.AspNetCore.Authorization;
+using FIT5120_WasteGuardian.Data;
 
 namespace FIT5120_WasteGuardian.Controllers;
 
