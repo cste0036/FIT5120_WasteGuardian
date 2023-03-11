@@ -1,7 +1,12 @@
 // Initialize variables
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-var score = 0;
+var bin1Score = document.getElementById("bin1-score");
+var bin2Score = document.getElementById("bin2-score");
+var bin3Score = document.getElementById("bin3-score");
+const pickup = document.getElementById("pickup-sound");
+const drop = document.getElementById("bin-sound");
+//var score = 0;
 var rubbishCounter = 0;
 var gameEnded = false;
 
@@ -20,14 +25,26 @@ var rubbish = [
 ];
 
 var bins = [
-    { color: "red", x: 50, y: 250, width: 100, height: 150, url: "js/assets/landfill.png" },
-    { color: "green", x: 350, y: 250, width: 100, height: 150, url: "js/assets/organics.png" },
-    { color: "yellow", x: 650, y: 250, width: 100, height: 150, url: "js/assets/recycle.png" },
+    { color: "red", x: 50, y: 250, width: 100, height: 150, score: 0, url: "js/assets/landfill.png" },
+    { color: "green", x: 350, y: 250, width: 100, height: 150, score: 0, url: "js/assets/organics.png" },
+    { color: "yellow", x: 650, y: 250, width: 100, height: 150, score: 0, url: "js/assets/recycle.png" },
 ];
 
 // Define arrays to load images for each object
 var rubbishImages = [];
 var binImages = [];
+
+// Create function to play game sounds
+function playPickup() {
+    pickup.currentTime = 0;
+    pickup.play();
+}
+
+// Create function to play game sounds
+function playDrop() {
+    drop.currentTime = 0;
+    drop.play();
+}
 
 
 // Initialize variables to keep track of the currently selected shape
@@ -91,10 +108,11 @@ function shapesColliding(shape1, shape2) {
 function checkCorrectBin(waste, bin) {
     // drop the rubbish and compare if it's in the correct bin
     selectedRubbish = null;
+    playDrop();
     console.log(waste.color, bin.color);
     if (waste.color == bin.color) {
         rubbishCounter++;
-        score++;
+        bin.score++; // Add bin score
         waste.x = 1000;
         waste.y = 1000;
     } else {
@@ -112,6 +130,7 @@ canvas.addEventListener("mousedown", function(event) {
         rubbishIndex = i;
         if (pointInShape(event.offsetX, event.offsetY, chosen)) {
             // Set the selected shape and calculate the offset between the mouse position and the shape position
+            playPickup();
             selectedRubbish = chosen;
             offsetX = event.offsetX - chosen.x;
             offsetY = event.offsetY - chosen.y;
@@ -169,13 +188,14 @@ function gameLoop() {
         if (rubbishCounter >= 10) {
             gameEnded = true;
             console.log("Game Over");
-            console.log(score);
+
+            // Display score
+            bin1Score.innerText = "You got " + bins[0].score + " out of 4!";
+            bin2Score.innerText = "You got " + bins[1].score + " out of 1!";
+            bin3Score.innerText = "You got " + bins[2].score + " out of 5!";
         }
 
-        // Display score
-        //ctx.font = "15px Arial";
-        //ctx.fillStyle = "black";
-        //ctx.fillText("Score: " + score, 10, 15);
+        
 
         requestAnimationFrame(gameLoop);
     }

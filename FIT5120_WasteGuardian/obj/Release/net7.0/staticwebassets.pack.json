@@ -13,6 +13,62 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/bananaPeel.png",
+      "PackagePath": "staticwebassets/js/assets/bananaPeel.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/brokenCup.png",
+      "PackagePath": "staticwebassets/js/assets/brokenCup.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/can.png",
+      "PackagePath": "staticwebassets/js/assets/can.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/cardboardBox.png",
+      "PackagePath": "staticwebassets/js/assets/cardboardBox.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/dirtyPizzaBox.png",
+      "PackagePath": "staticwebassets/js/assets/dirtyPizzaBox.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/garbageBag.png",
+      "PackagePath": "staticwebassets/js/assets/garbageBag.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/landfill.png",
+      "PackagePath": "staticwebassets/js/assets/landfill.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/organics.png",
+      "PackagePath": "staticwebassets/js/assets/organics.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/paper.png",
+      "PackagePath": "staticwebassets/js/assets/paper.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/plasticBottle.png",
+      "PackagePath": "staticwebassets/js/assets/plasticBottle.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/plasticJug.png",
+      "PackagePath": "staticwebassets/js/assets/plasticJug.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/recycle.png",
+      "PackagePath": "staticwebassets/js/assets/recycle.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/sprayCan.png",
+      "PackagePath": "staticwebassets/js/assets/sprayCan.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/game.js",
+      "PackagePath": "staticwebassets/js/game.js"
+    },
+    {
       "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

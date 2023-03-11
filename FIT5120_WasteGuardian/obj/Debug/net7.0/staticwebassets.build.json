@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EdiDYc0v1ecFkVNva2nfyfPWMwHxI3p+yZFqh/2fMHE=",
+  "Hash": "K8CkEqAuwkdMdG1JFoBIAbSn0FaMf9+jv5v7M8vYY78=",
   "Source": "FIT5120_WasteGuardian",
   "BasePath": "_content/FIT5120_WasteGuardian",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/.DS_Store",
+      "SourceId": "FIT5120_WasteGuardian",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/",
+      "BasePath": "_content/FIT5120_WasteGuardian",
+      "RelativePath": "js/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/.DS_Store"
+    },
+    {
       "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/bananaPeel.png",
       "SourceId": "FIT5120_WasteGuardian",
       "SourceType": "Discovered",
@@ -1190,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot/js/assets/dirtyPizzaBox.png"
     },
     {
+      "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/drop.mp3",
+      "SourceId": "FIT5120_WasteGuardian",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/",
+      "BasePath": "_content/FIT5120_WasteGuardian",
+      "RelativePath": "js/assets/drop.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/assets/drop.mp3"
+    },
+    {
       "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/garbageBag.png",
       "SourceId": "FIT5120_WasteGuardian",
       "SourceType": "Discovered",
@@ -1256,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/assets/paper.png"
+    },
+    {
+      "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/pickup.mp3",
+      "SourceId": "FIT5120_WasteGuardian",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/",
+      "BasePath": "_content/FIT5120_WasteGuardian",
+      "RelativePath": "js/assets/pickup.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/assets/pickup.mp3"
     },
     {
       "Identity": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/assets/plasticBottle.png",
