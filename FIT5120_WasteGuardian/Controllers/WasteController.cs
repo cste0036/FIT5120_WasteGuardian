@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FIT5120_WasteGuardian.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -24,6 +25,9 @@ namespace FIT5120_WasteGuardian.Controllers
         public IActionResult Index()
         {
             var wastes = _context.WasteCollecteds.ToList();
+            var jsonString = JsonSerializer.Serialize(wastes);
+            ViewBag.Data = jsonString;
+           
             return View(wastes);
         }
     }

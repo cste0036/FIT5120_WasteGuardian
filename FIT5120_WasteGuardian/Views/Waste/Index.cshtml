@@ -22,7 +22,9 @@
             <th></th>
         </tr>
     </thead>
+
     <tbody>
+
         @foreach (var item in Model)
         {
             <tr>
@@ -40,3 +42,13 @@
     </tbody>
 
 </table>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            alert('TEST');
+            var values = @Html.Raw(Json.Serialize(Model));
+            console.log(values);
+        });
+    </script>
+}
