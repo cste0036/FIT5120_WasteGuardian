@@ -26,6 +26,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult SortInformation()
+    {
+        return View();
+    }
+
+    public IActionResult Reduce()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

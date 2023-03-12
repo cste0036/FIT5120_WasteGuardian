@@ -12,22 +12,22 @@ var gameEnded = false;
 
 // Define the rubbish objects to be used in the game
 var rubbish = [
-    { color: "green", x: 40, y: 50, width: 50, height: 50, url: "../assets/bananaPeel.png" },
-    { color: "red", x: 120, y: 100, width: 50, height: 50, url: "../assets/brokenCup.png" },
-    { color: "yellow", x: 200, y: 50, width: 50, height: 50, url: "../assets/can.png" },
-    { color: "yellow", x: 280, y: 100, width: 50, height: 50, url: "../assets/cardboardBox.png" },
-    { color: "red", x: 360, y: 50, width: 50, height: 50, url: "../assets/dirtyPizzaBox.png" },
-    { color: "red", x: 440, y: 100, width: 50, height: 50, url: "../assets/garbageBag.png" },
-    { color: "yellow", x: 520, y: 50, width: 50, height: 50, url: "../assets/paper.png" },
-    { color: "yellow", x: 600, y: 100, width: 50, height: 50, url: "../assets/plasticBottle.png" },
-    { color: "yellow", x: 680, y: 50, width: 50, height: 50, url: "../assets/plasticJug.png" },
-    { color: "red", x: 760, y: 100, width: 50, height: 50, url: "../assets/sprayCan.png" },
+    { color: "green", x: 20, y: 50, width: 50, height: 50, url: "../assets/bananaPeel.png" },
+    { color: "red", x: 100, y: 100, width: 50, height: 50, url: "../assets/brokenCup.png" },
+    { color: "yellow", x: 180, y: 50, width: 50, height: 50, url: "../assets/can.png" },
+    { color: "yellow", x: 260, y: 100, width: 50, height: 50, url: "../assets/cardboardBox.png" },
+    { color: "red", x: 340, y: 50, width: 50, height: 50, url: "../assets/dirtyPizzaBox.png" },
+    { color: "red", x: 420, y: 100, width: 50, height: 50, url: "../assets/garbageBag.png" },
+    { color: "yellow", x: 500, y: 50, width: 50, height: 50, url: "../assets/paper.png" },
+    { color: "yellow", x: 580, y: 100, width: 50, height: 50, url: "../assets/plasticBottle.png" },
+    { color: "yellow", x: 660, y: 50, width: 50, height: 50, url: "../assets/plasticJug.png" },
+    { color: "red", x: 740, y: 100, width: 50, height: 50, url: "../assets/sprayCan.png" },
 ];
 
 var bins = [
-    { color: "red", x: 50, y: 250, width: 100, height: 150, score: 0, url: "../assets/landfill.png" },
-    { color: "green", x: 350, y: 250, width: 100, height: 150, score: 0, url: "../assets/organics.png" },
-    { color: "yellow", x: 650, y: 250, width: 100, height: 150, score: 0, url: "../assets/recycle.png" },
+    { color: "red", x: 50, y: 250, width: 100, height: 150, score: 0, url: "../assets/Bin-Landfill.png" },
+    { color: "green", x: 350, y: 250, width: 100, height: 150, score: 0, url: "../assets/Bin-GreenWaste.png" },
+    { color: "yellow", x: 650, y: 250, width: 100, height: 150, score: 0, url: "../assets/Bin-Recycling.png" },
 ];
 
 // Define arrays to load images for each object
