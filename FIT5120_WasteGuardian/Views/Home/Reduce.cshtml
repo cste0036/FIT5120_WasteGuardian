@@ -3,8 +3,64 @@
     ViewData["Title"] = "Reduce Waste";
 }
 
+
+
 <div class="row justify-content-center">
-    <div class="col-4 text-center">
-        <h1>Ways to reduce Waste</h1>
+    <div class="col-10 text-center">
+        <h1>How to reduce waste?</h1>
     </div>
 </div>
+
+<div class="row justify-content-center">
+    <div class="col-6 justify-content-start">
+        <h2>Recycle</h2>
+        <h5>what can be produced from recycle?</h5>
+        <p>Hover over the product to see what things can be made by recycling  </p>
+        
+        <ul id="myList" class="list-unstyled">
+            <li>Plastic</li>
+            <li>Paper</li>
+            <li>Glass</li>
+            <li>Metal</li>
+        </ul>
+    </div>
+
+
+    <div class="col-6 justify-content-end">
+        <h2>Reuse</h2>
+        <h5>How can you DIY?</h5>
+        <p>
+            <ul>
+                <li><a asp-area="" asp-controller="DIY" asp-action="Plastic">Plastic Bottles</a></li>
+                <li><a asp-area="" asp-controller="DIY" asp-action="Glass">Glass</a></li>
+                <li><a asp-area="" asp-controller="DIY" asp-action="Clothes">Clothes</a></li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#myList li').each(function (index) {
+            if(index == 0) {
+                    var tooltipText = "Recycled Mats and Rugs\nNatural and Recycled Shoes\nRecycled Yoga Mats\nRecycled Swimwear\nRecycled Stockings\nRecycled Blankets\nRecycled Furniture\nRecycled Surfboard Fins"          
+            }
+            else if(index == 1) {
+                    var tooltipText = "Packaging\nToilet paper\nEgg cartons\nRecycled cardboard\nInsulation\nkitty litter\nBuilding products"
+            }
+            else if(index == 2) {
+                    var tooltipText = "New bottles\nJars\nComposite Glass Countertops\nBeads\nConstruction equipment"
+            }
+            else if(index == 3) {
+                    var tooltipText = "Automobiles\nComputers\nBicycles\nPiping\nBridges\nEyeglass frames\nCooking pots & pans\nVarious tools"     
+            }
+            else {
+                var tooltipText = "This is tooltip for Item " + (index + 1);
+            }
+            $(this).attr('title', tooltipText);
+        });
+    });
+    </script>
+}
