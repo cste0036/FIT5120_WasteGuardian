@@ -52,6 +52,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/Bins/Landfill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmlucy9MYW5kZmlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/Bins/Organic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmlucy9PcmdhbmljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/Bins/Recycling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmlucy9SZWN5Y2xpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/DIY/Clothes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRElZL0Nsb3RoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/DIY/Glass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRElZL0dsYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/DIY/Plastic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRElZL1BsYXN0aWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/Views/Home/Game.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HYW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

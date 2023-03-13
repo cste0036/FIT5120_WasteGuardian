@@ -81,12 +81,52 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/css/wasteguardian.css",
+      "PackagePath": "staticwebassets/css/wasteguardian.css"
+    },
+    {
       "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/.DS_Store",
-      "PackagePath": "staticwebassets/js/.DS_Store"
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/ClothesDIY.jpg",
+      "PackagePath": "staticwebassets/images/ClothesDIY.jpg"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/GlassBottleDIY.jfif",
+      "PackagePath": "staticwebassets/images/GlassBottleDIY.jfif"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/PlasticBottleDIY.jpg",
+      "PackagePath": "staticwebassets/images/PlasticBottleDIY.jpg"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/greenBin.png",
+      "PackagePath": "staticwebassets/images/greenBin.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/greenbininfo.png",
+      "PackagePath": "staticwebassets/images/greenbininfo.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/redBin.png",
+      "PackagePath": "staticwebassets/images/redBin.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/redbininfo.png",
+      "PackagePath": "staticwebassets/images/redbininfo.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/splashpage.png",
+      "PackagePath": "staticwebassets/images/splashpage.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/yellowBin.png",
+      "PackagePath": "staticwebassets/images/yellowBin.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/images/yellowbininfo.png",
+      "PackagePath": "staticwebassets/images/yellowbininfo.png"
     },
     {
       "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/js/game.js",
