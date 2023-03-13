@@ -4,20 +4,29 @@
 @{
     ViewData["Title"] = "WasteInfo";
 }
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
 
+<div class="row justify-content-center">
 <h1>WasteInfo</h1>
+</div>
+<div class="row justify-content-center">
+<div class="col-7 text-center" id="donut-chart"></div>
 
+<div class="col-5 text-center">
 <table class="table">
     <thead>
         <tr>
             <th>
-                Id
-            </th>
-            <th>
-                Year
-            </th>
-            <th>
                 Type
+            </th>
+            <th>
+                Collected
+            </th>
+            <th>
+                Sorted
             </th>
             <th></th>
         </tr>
@@ -29,26 +38,89 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Year)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Collected)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sorted)
                 </td>
             </tr>
         }
     </tbody>
 
 </table>
+</div>
+</div>
+
+
+<script>
+    
+</script>
 
 @section Scripts {
     <script type="text/javascript">
         $(function () {
-            alert('TEST');
-            var values = @Html.Raw(Json.Serialize(Model));
-            console.log(values);
+            //alert('TEST');
+            var data = @Html.Raw(Json.Serialize(Model));
+            
+            console.log(data);
+            /**
+             *  0 : {id: 1, year: '2019-01-01T12:00:00', type: 'Garbage', collected: 1222837, sorted: 0}
+                1 : {id: 2, year: '2019-01-01T12:00:00', type: 'Recyclables', collected: 572456, sorted: 496508}
+                2 : {id: 3, year: '2019-01-01T12:00:00', type: 'Organics', collected: 570699, sorted: 2199}
+             */
+
+            // Set up the dimensions and margins of the SVG
+            const width = 600;
+            const height = 600;
+            const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+            const radius = Math.min(width, height) / 2 - 10;
+            const innerRadius = radius / 1.8;
+
+            // Create the SVG element and set its size and margins
+            const svg = d3.select("#donut-chart")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left + width / 2}, ${margin.top + height / 2})`);
+
+            // Define the color scale for the donut chart
+            const color = d3.scaleOrdinal()
+                .domain(data.map(d => d.type))
+                .range(d3.schemeSet2);
+
+            // Define the pie layout and data accessor functions
+            const pie = d3.pie()
+                .value(d => d.collected);
+            const arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(innerRadius);
+            const outerArc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(radius);
+
+            // Calculate the total value of the data
+            const total = d3.sum(data, d => d.collected);
+
+            // Create the slices of the donut chart
+            const slices = svg.selectAll("slice")
+                .data(pie(data))
+                .enter()
+                .append("g");
+
+            // Add the donut slice paths and color them
+            slices.append("path")
+                .attr("d", arc)
+                .attr("fill", d => color(d.data.type));
+
+            // Add the donut slice labels
+            slices.append("text")
+                .text(d => `${d.data.type} (${(d.data.collected / total * 100).toFixed(2)}%)`)
+                .attr("transform", d => `translate(${outerArc.centroid(d)})`)
+                .attr("text-anchor", "middle");
         });
     </script>
 }
