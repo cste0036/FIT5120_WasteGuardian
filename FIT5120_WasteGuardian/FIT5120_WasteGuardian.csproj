@@ -32,7 +32,7 @@
     <Content Remove="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\js\assets\" />
+    <Folder Include="wwwroot\assets\" />
     <Folder Include="Views\Waste\" />
   </ItemGroup>
 </Project>
