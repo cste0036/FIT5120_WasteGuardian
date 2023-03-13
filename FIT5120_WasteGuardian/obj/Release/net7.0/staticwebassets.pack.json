@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets/FIT5120_WasteGuardian.bundle.scp.css"
     },
     {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/assets/Bin-GreenWaste.png",
+      "PackagePath": "staticwebassets/assets/Bin-GreenWaste.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/assets/Bin-Landfill.png",
+      "PackagePath": "staticwebassets/assets/Bin-Landfill.png"
+    },
+    {
+      "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/assets/Bin-Recycling.png",
+      "PackagePath": "staticwebassets/assets/Bin-Recycling.png"
+    },
+    {
       "Id": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/wwwroot/assets/bananaPeel.png",
       "PackagePath": "staticwebassets/assets/bananaPeel.png"
     },
