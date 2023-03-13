@@ -11,18 +11,18 @@
 
 <div class="row justify-content-center">
     <div class="col-4">
-        <a href="redbininfo.html" target="_blank">
-            <img src="~/images/redBin.png" alt="Recyling" style="width:60%;height: 70%">
+        <a asp-area="" asp-controller="Bins" asp-action="Landfill">
+            <img src="~/images/redBin.png" alt="Landfill" style="width:60%;height:70%;margin:auto;display:block;">
         </a>
     </div>
-    <div class="col-4">
-        <a href="Greenbininfo.html" target="_blank">
-            <img src="~/images/greenBin.png" alt="Organics" style="width:60%;height: 70%">
+    <div class="col-4 justify-content-center">
+        <a asp-area="" asp-controller="Bins" asp-action="Organic">
+            <img src="~/images/greenBin.png" alt="Organics" style="width:60%;height:70%;margin:auto;display:block;">
         </a>
     </div>
-    <div class="col-4">
-        <a href="Yellowbininfo.html" target="_blank">
-            <img src="~/images/yellowBin.png" alt="Recycling" style="width:60%;height: 70%">
+    <div class="col-4 justify-content-center">
+        <a asp-area="" asp-controller="Bins" asp-action="Recycling">
+            <img src="~/images/yellowBin.png" alt="Recycling" style="width:60%;height:70%;margin:auto;display:block;">
         </a>
     </div>
 </div>
