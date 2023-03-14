@@ -6,7 +6,7 @@ var bin2Score = document.getElementById("bin2-score");
 var bin3Score = document.getElementById("bin3-score");
 const pickup = document.getElementById("pickup-sound");
 const drop = document.getElementById("bin-sound");
-//var score = 0;
+var score = 0;
 var rubbishCounter = 0;
 var gameEnded = false;
 
@@ -113,6 +113,7 @@ function checkCorrectBin(waste, bin) {
     console.log(waste.color, bin.color);
     if (waste.color == bin.color) {
         rubbishCounter++;
+        score++; // Add player overall score
         bin.score++; // Add bin score
         waste.x = 1000;
         waste.y = 1000;
@@ -121,6 +122,18 @@ function checkCorrectBin(waste, bin) {
         waste.x = 1000;
         waste.y = 1000;
     }
+}
+
+// Function to generate a new action link
+function generateActionLink() {
+
+    // generate the ActionLink button element using Razor's Html.ActionLink method
+    //<input type="button" class="w-100 btn btn-lg btn-primary" value="Start Playing ->" onclick="location.href='@Url.Action(" Game", "Home")'" />
+    var actionLink = "<input type='button' class='w-100 btn btn-lg btn-primary' value='Find out the correct way to sort your Rubbish'";
+    var onClick = 'onclick="location.href=';
+    var act = "'@Url.Action('SortInformation', 'Home')'" + '"' + "/>";
+    actionLink = actionLink + onClick + act;
+    return actionLink;
 }
 
 // Handle mouse down events on the canvas
@@ -159,6 +172,7 @@ canvas.addEventListener("mousemove", function(event) {
 });
 
 
+
 // Game loop
 function gameLoop() {
     // Draw the objects to the canvas
@@ -191,12 +205,14 @@ function gameLoop() {
             console.log("Game Over");
 
             // Display score
-            bin1Score.innerText = "You got " + bins[0].score + " out of 4!";
-            bin2Score.innerText = "You got " + bins[1].score + " out of 1!";
-            bin3Score.innerText = "You got " + bins[2].score + " out of 5!";
-        }
+            bin1Score.innerText = "You got " + bins[0].score + " items correct out of 4!";
+            bin2Score.innerText = "You got " + bins[1].score + " items correct out of 1!";
+            bin3Score.innerText = "You got " + bins[2].score + " items correct out of 5!";
 
-        
+            // Reveal the link button for the next page
+            var element = document.getElementById("nextPage").style.display = "block";
+
+        }
 
         requestAnimationFrame(gameLoop);
     }

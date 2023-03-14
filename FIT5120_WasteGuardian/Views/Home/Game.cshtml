@@ -10,8 +10,7 @@
     </style>
     
 </head>
-
-
+<body>
 <div class="text-center">
     <h1 class="display-4">Where does the rubbish go?</h1>
     <p>(Drag the waste into the appropiate bins)</p>
@@ -37,4 +36,11 @@
     </div>
 </div>
 
+<div class="row justify-content-center" >
+        <div class="col-8 text-center" id="nextPage" style="display: none;">
+        <input type="button" class="w-100 btn btn-lg btn-primary" value="Learn how to sort your rubbish properly here." onclick="location.href='@Url.Action("SortInformation", "Home")'" />
+    </div>
+</div>
+
     <script src='~/js/game.js'></script>
+</body>

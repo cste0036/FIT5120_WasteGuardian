@@ -11381,25 +11381,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/callum/.nuget/packages/": {}
+    "C:\\Users\\callu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj",
+      "projectUniqueName": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj",
       "projectName": "FIT5120_WasteGuardian",
-      "projectPath": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/FIT5120_WasteGuardian.csproj",
-      "packagesPath": "/Users/callum/.nuget/packages/",
-      "outputPath": "/Users/callum/Projects/FIT5120_WasteGuardian/FIT5120_WasteGuardian/obj/",
+      "projectPath": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\FIT5120_WasteGuardian.csproj",
+      "packagesPath": "C:\\Users\\callu\\.nuget\\packages\\",
+      "outputPath": "C:\\Monash\\FIT5120_IndustryExperience\\Repo\\FIT5120_WasteGuardian\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/callum/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\callu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11474,7 +11475,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
