@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <History>False|2023-03-15T10:11:54.4390477Z;False|2023-03-15T21:08:30.5240769+11:00;False|2023-03-15T21:06:51.5830035+11:00;False|2023-03-15T21:05:09.6368833+11:00;</History>
+    <LastFailureDetails>
+    </LastFailureDetails>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJ5wS33kicE+4HSm+bS45egAAAAACAAAAAAAQZgAAAAEAACAAAACRVWfsic1r22kTc0NrxVk0i4/Ocwh0S/phXSjZsCJpngAAAAAOgAAAAAIAACAAAABob0CNXBCmS/G4XWeG+oHEsqzy6YXgW8jAHQi7Lq6uCCAAAAAIvExNmiYPnvlYaQBQFn1FG7/hkD21Fr4Ckv8MWLB+aUAAAAAoZrTDDD6CIM42ChEsg59tmNfaiEBMnn8pQG5HhP/J4Puqd1EU3lssZNmRUua7jPxIBOUfOR+O6TIXPL7dh5Iy</EncryptedPassword>
+  </PropertyGroup>
 </Project>
