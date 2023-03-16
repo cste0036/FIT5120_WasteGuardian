@@ -1,6 +1,7 @@
 // Initialize variables
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
+var scoreDisplay = document.getElementById("scoreDisplay");
 var bin1Score = document.getElementById("bin1-score");
 var bin2Score = document.getElementById("bin2-score");
 var bin3Score = document.getElementById("bin3-score");
@@ -12,16 +13,16 @@ var gameEnded = false;
 
 // Define the rubbish objects to be used in the game
 var rubbish = [
-    { color: "green", x: 20, y: 50, width: 50, height: 50, url: "../assets/bananaPeel.png" },
-    { color: "red", x: 100, y: 100, width: 50, height: 50, url: "../assets/brokenCup.png" },
-    { color: "yellow", x: 180, y: 50, width: 50, height: 50, url: "../assets/can.png" },
-    { color: "yellow", x: 260, y: 100, width: 50, height: 50, url: "../assets/cardboardBox.png" },
-    { color: "red", x: 340, y: 50, width: 50, height: 50, url: "../assets/dirtyPizzaBox.png" },
-    { color: "red", x: 420, y: 100, width: 50, height: 50, url: "../assets/garbageBag.png" },
-    { color: "yellow", x: 500, y: 50, width: 50, height: 50, url: "../assets/paper.png" },
-    { color: "yellow", x: 580, y: 100, width: 50, height: 50, url: "../assets/plasticBottle.png" },
-    { color: "yellow", x: 660, y: 50, width: 50, height: 50, url: "../assets/plasticJug.png" },
-    { color: "red", x: 740, y: 100, width: 50, height: 50, url: "../assets/sprayCan.png" },
+    { color: "green", x: 20, y: 50, width: 50, height: 50, url: "../assets/banana.png" },
+    { color: "red", x: 100, y: 100, width: 50, height: 50, url: "../assets/brokenPlastics.png" },
+    { color: "yellow", x: 180, y: 50, width: 50, height: 50, url: "../assets/cans.png" },
+    { color: "red", x: 260, y: 100, width: 50, height: 50, url: "../assets/diaper.png" },
+    { color: "green", x: 340, y: 50, width: 50, height: 50, url: "../assets/flowers.png" },
+    { color: "yellow", x: 420, y: 100, width: 50, height: 50, url: "../assets/paperBag.png" },
+    { color: "yellow", x: 500, y: 50, width: 50, height: 50, url: "../assets/papertowel.png" },
+    { color: "green", x: 580, y: 100, width: 50, height: 50, url: "../assets/pizza.png" },
+    { color: "red", x: 660, y: 50, width: 50, height: 50, url: "../assets/plasticBag.png" },
+    { color: "yellow", x: 740, y: 100, width: 50, height: 50, url: "../assets/plasticBottles.png" },
 ];
 
 
@@ -172,7 +173,6 @@ canvas.addEventListener("mousemove", function(event) {
 });
 
 
-
 // Game loop
 function gameLoop() {
     // Draw the objects to the canvas
@@ -205,9 +205,10 @@ function gameLoop() {
             console.log("Game Over");
 
             // Display score
-            bin1Score.innerText = "You got " + bins[0].score + " items correct out of 4!";
-            bin2Score.innerText = "You got " + bins[1].score + " items correct out of 1!";
-            bin3Score.innerText = "You got " + bins[2].score + " items correct out of 5!";
+            scoreDisplay.innerText = "Congratulations! You got a total score of " + score + " out of 10!"
+            bin1Score.innerText = "You got " + bins[0].score + " items correct out of 3 for Landfill!";
+            bin2Score.innerText = "You got " + bins[1].score + " items correct out of 3 for Organics!";
+            bin3Score.innerText = "You got " + bins[2].score + " items correct out of 4 for Recycling!";
 
             // Reveal the link button for the next page
             var element = document.getElementById("nextPage").style.display = "block";
