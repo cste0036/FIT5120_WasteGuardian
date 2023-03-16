@@ -7,6 +7,23 @@
         canvas {
             border: 1px solid rgb(255, 255, 255);
         }
+
+        .btn-primary {
+            color: #212529;
+            background-color: #0bd784;
+            border-color: #09a666
+        }
+
+            .btn-primary:hover {
+                color: #212529;
+                background-color: #078e57;
+                border-color: #09a666
+            }
+
+            .btn-primary:focus,
+            .btn-primary.focus {
+                box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+            }
     </style>
     
 </head>
@@ -37,7 +54,7 @@
 </div>
 
 <div class="row justify-content-center" >
-        <div class="col-8 text-center" id="nextPage" style="display: none;">
+        <div class="col-8 text-center" id="nextPage" style="margin-top: 1em; display: none;">
         <input type="button" class="w-100 btn btn-lg btn-primary" value="Learn how to sort your rubbish properly here." onclick="location.href='@Url.Action("SortInformation", "Home")'" />
     </div>
 </div>

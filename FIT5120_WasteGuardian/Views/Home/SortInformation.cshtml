@@ -3,9 +3,30 @@
     ViewData["Title"] = "Waste Sorting Information";
 }
 
+<head>
+    <style>
+        .btn-primary {
+            color: #212529;
+            background-color: #0bd784;
+            border-color: #09a666
+        }
+
+            .btn-primary:hover {
+                color: #212529;
+                background-color: #078e57;
+                border-color: #09a666
+            }
+
+            .btn-primary:focus,
+            .btn-primary.focus {
+                box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+            }
+    </style>
+</head>
+
 <div class="row justify-content-center">
     <div class="col-6 text-center">
-        <h1 class ="display-4">Waste Sorting Information</h1>
+        <h1 class="display-4">Waste Sorting Information</h1>
     </div>
 </div>
 
@@ -30,14 +51,6 @@
 <!-- This section handles the link to the next page, uses row, col classes -->
 <div class="row justify-content-center">
     <div class="col-12">
-        <h2 style="background-color:powderblue;">Click on each bin to see the correct trash sorting method for the Bin.</h2>
-    </div>
-</div>
-<<div class="row justify-content-center">
-    <div class="col-8">
-        <h2>How to Reduce waste!!</h2>
-    </div>
-    <div class="col-2">
-        <input type="button" class="w-100 btn btn-lg btn-primary" value="See more" onclick="location.href='@Url.Action("Reduce", "Home")'" />
+        <h2 class="text-center">Click on each bin to see the correct trash sorting method for the Bin.</h2>
     </div>
 </div>

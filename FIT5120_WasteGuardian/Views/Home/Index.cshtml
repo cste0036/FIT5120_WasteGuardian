@@ -3,21 +3,39 @@
 }
 
 <head>
+    <style>
+        .btn-primary {
+            color: #212529;
+            background-color: #0bd784;
+            border-color: #09a666
+        }
+
+            .btn-primary:hover {
+                color: #212529;
+                background-color: #078e57;
+                border-color: #09a666
+            }
+
+            .btn-primary:focus,
+            .btn-primary.focus {
+                box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+            }
+    </style>
 </head>
 
 <h1></h1>
 
 <div class="row justify-content-center">
     <div class="col-5 text-left">
-        <h1 class="display-4">Welcome Waste Guardians!</h1>
+        <h1 class="display-4" style="margin-top: 2em">Welcome Waste Guardians!</h1>
         <br />
         <h4>How much do you know about trash sorting? Do you want to play a game?</h4>
         <br />
-        <input type="button" class="w-100 btn btn-lg btn-primary" value="Start Playing ->" onclick="location.href='@Url.Action("Game", "Home")'" />
+        <input type="button" class="w-100 btn btn-lg btn-primary" style="margin-top: 1em" value="Start Playing ->" onclick="location.href='@Url.Action("Game", "Home")'" />
     </div>
 
-    <div class="col-7 text-center">
-        <img src="~/images/splashpage.png" alt="info" style="width:80%;height:80%;margin:auto;display:block;">
+    <div class="col-7 text-center ">
+        <img src="~/images/splashpage.png" alt="info" style="width:80%;height:80%;margin:auto;display:block; margin-top: 1em;">
     </div>
 </div>
 
